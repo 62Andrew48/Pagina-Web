@@ -1,0 +1,299 @@
+/* Fondo de la Página */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: auto;
+    background: #0c192c;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.bubbles{
+    position: relative;
+    display: flex;
+}
+
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(480vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+/* Título de la Página */
+.Titulo{
+    background: #003285;
+    border: 1px solid #2A629A;
+    padding: 25px;
+    width: 50%;
+    margin: 50px auto;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 55px;
+    font-family: "Honk", system-ui;
+}
+
+@media (max-width: 740px){
+
+    .Titulo{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 410px){
+
+    .Titulo{
+        font-size: 20px;
+    }
+}
+
+/* Menú de la Página */
+.nav-enlace{
+    display: inline-block;
+    background: salmon;
+    border: 1px solid #FFDA78;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-family: "Passion One", sans-serif;
+}
+
+.nav-enlace:hover{
+    background: rosybrown;
+}
+
+nav{
+    background: #003285;
+    border: 1px solid #2A629A;
+    margin: 50px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-boton{
+    background: salmon;
+    border: 1px solid #FFDA78;
+    color: #fff;
+    padding: 10px 0;
+    display: none;
+}
+
+@media (max-width: 600px){
+
+    nav{
+        background: #003285;
+        flex-direction: column;
+    }
+
+    .nav-enlace{
+        margin: 10px 0;
+    }
+
+    .nav-boton{
+        display: inline-block;
+    }
+
+    .desaparece{
+        display: none;
+    }
+}
+
+/* Información de los Juegos */
+.main-content{
+    background: #31363F;
+    color: white;
+    border: 1px solid #F97300;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.Imagen-Juego{
+    margin: 30px;
+    text-align: center;
+}
+
+@media (max-width: 940px){
+    .Ajustar-Imagen{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 530px){
+    .Ajustar-Imagen-1{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.Titulo-Juego{
+    font-size: 40px;
+    margin: 30px;
+    text-align: center;
+    font-family: "Passion One", sans-serif;
+}
+
+.Informacion{
+    font-size: 20px;
+    text-align: justify;
+    margin: 20px;
+    font-family: "Lato", sans-serif;
+}
+
+.Caracteristicas{
+    font-size: 30px;
+    text-align: justify;
+    margin: 30px;
+    text-align: center;
+    font-family: "Passion One", sans-serif;
+}
+
+.Ptos-Relevantes{
+    font-size: 20px;
+    text-align: justify;
+    margin: 10px;
+    font-family: "Lato", sans-serif;
+}
+
+.Link-Juego{
+    background: salmon;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: auto;
+    padding: 10px;
+    font-family: "Passion One", sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+@media (max-width: 1500px){
+    .main-content{
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+}
+
+/* Tabla de Precios */
+.container-1{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.columna{
+    background: #F9F7F7;
+    color: #333;
+    border: 1px solid #DBE2EF;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 5px #888; /*Si colocas números negativos se verán del lado contrario*/
+    width: 20%;
+    box-sizing: border-box;
+}
+
+.Titulo-Plan{
+    margin: 20px;
+    font-family: "Passion One", sans-serif;
+}
+
+.precio{
+    font-size: 30px;
+    color: #00dac7;
+    margin: 30px;
+}
+
+.Mini-Informacion-Plan{
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+}
+
+.Ptos-Relevantes-1{
+    font-size: 15px;
+    text-align: justify;
+    margin: 10px 20px 10px 20px;
+    font-family: "Lato", sans-serif;
+}
+
+.btn-precio{
+    background: salmon;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 10px;
+    font-family: "Passion One", sans-serif;
+}
+
+.btn-precio:hover{
+    background: rgb(250, 93, 75);
+}
+
+@media (max-width: 1070px){
+    .columna{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px){
+    .columna{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.Separar{
+    margin: 40px;
+}
+
+.Separar-1{
+    margin: 30px;
+}

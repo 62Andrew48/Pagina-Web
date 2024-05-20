@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videogames</title>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Lato:wght@300;400;700&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+        </div>
+        
+        <header>
+            <h1 class="Titulo">Portal de Videojuegos</h1>
+            <div>
+            <nav>
+                <button class="nav-boton" onclick="accion()">Menú</button>
+                <a href="#Juegos" class="nav-enlace desaparece">Juegos</a>
+                <a href="#Planes" class="nav-enlace desaparece">Planes</a>
+                <a href="Documento Trabajos - 2°Cohorte.pdf" class="nav-enlace desaparece">Documento</a>
+            </nav>
+        
+            <script>
+                function accion(){
+                    var ancla = document.getElementsByClassName('nav-enlace');
+                    for(var i = 0; i < ancla.length; i++){
+                        ancla[i].classList.toggle('desaparece');
+                    }
+                }
+            </script>
+            </div>
+        </header>
+        
+        <section class="main-content" id="Juegos">
+                
+                <div class="Imagen-Juego">
+                <img src="Left4Dead2.jpg" class="Ajustar-Imagen" alt="Juego 1">
+            </div>
+
+                <h3 class="Titulo-Juego">Left 4 Dead 2</h3>
+
+                <p class="Informacion">Left 4 Dead 2 es un videojuego de disparos en primera persona cooperativo de tipo "survival horror" desarrollado por Valve Corporation. Es la secuela de Left 4 Dead y se lanzó al mercado en noviembre de 2009.
+                </p>
+
+                <p class="Informacion">En el juego, los jugadores toman el control de un grupo de cuatro supervivientes que deben atravesar diferentes escenarios plagados de infectados, una horda de zombis sedientos de sangre. La cooperación entre los jugadores es fundamental para la supervivencia, ya que cada uno de ellos tiene sus propias habilidades y debilidades.</p>
+
+                <ul>
+                    <h4 class="Caracteristicas">Características principales:</h4>
+                    
+                    <li  class="Ptos-Relevantes">Campañas cooperativas: El juego cuenta con cinco campañas diferentes, cada una con varios capítulos que los jugadores deben completar para avanzar. Cada campaña tiene su propia historia y ambientación.</li>
+
+                    <li  class="Ptos-Relevantes">Modos de juego adicionales: Además de las campañas cooperativas, Left 4 Dead 2 también incluye varios modos de juego adicionales, como Versus, donde los jugadores se dividen en dos equipos: uno de supervivientes y otro de infectados, y Survival, donde los jugadores deben sobrevivir a oleadas cada vez más difíciles de enemigos.</li>
+
+                    <li  class="Ptos-Relevantes">Nuevas armas y objetos: Left 4 Dead 2 introduce nuevas armas y objetos, como armas cuerpo a cuerpo, sartenes, motosierras y cócteles molotov.</li>
+
+                    <li  class="Ptos-Relevantes">IA Director 2.0: El juego cuenta con un sistema de IA mejorado que ajusta la dificultad y los eventos del juego en tiempo real en función del rendimiento de los jugadores.</li>
+                </ul>
+
+                <a href="https://www.youtube.com/watch?v=BydsgMMdD68" class="Link-Juego">Trailer de Left 4 Dead 2</a>
+
+                <hr class="Separar">
+
+                <div class="Imagen-Juego">
+                <img src="Fallout.jpg" class="Ajustar-Imagen-1" alt="Juego 2" />
+            </div>
+
+                <h3  class="Titulo-Juego">Fallout 76</h3>
+
+                <p class="Informacion">Fallout 76, desarrollado por Bethesda Game Studios, te invita a explorar un mundo postapocalíptico como parte de la primera entrega multijugador de la serie Fallout. Ambientado en el año 2105, 25 años después de las bombas nucleares, te pones en la piel de un Morador del Refugio 76 que emerge a un Appalachia devastado para reconstruir la región y descubrir los secretos de una misteriosa plaga.
+                </p>
+
+                <ul>
+                    <h4 class="Caracteristicas">Características principales:</h4>
+
+                    <li class="Ptos-Relevantes">Un mundo abierto enorme: Explora Appalachia, un extenso paisaje plagado de bosques frondosos, montañas escarpadas y ruinas de la civilización anterior.</li>
+
+                    <li class="Ptos-Relevantes">Historia y misiones: Embárcate en una extensa misión principal para desentrañar los misterios del Yermo y descubre las historias de sus antiguos habitantes.</li>
+
+                    <li class="Ptos-Relevantes">Cooperación y competición: Forma equipo con otros jugadores para sobrevivir a las amenazas del Yermo o compite en modos de juego JcJ por recursos y territorio.</li>
+
+                    <li class="Ptos-Relevantes">Construcción y personalización: Construye tu propio campamento desde cero, recolecta recursos y crea armas, armaduras y objetos para personalizar tu experiencia.</li>
+
+                    <li class="Ptos-Relevantes">Supervivencia: Enfréntate a diversos peligros, desde criaturas mutadas hasta facciones hostiles, mientras gestionas tus necesidades básicas como la comida, el agua y la salud.</li>
+
+                    <li class="Ptos-Relevantes">Actualizaciones constantes: Disfruta de contenido nuevo y eventos regulares que expanden el mundo y la experiencia de juego.</li>
+                </ul>
+
+                    <a href="https://www.youtube.com/watch?v=M9FGaan35s0"  class="Link-Juego">Trailer de Fallout 76</a>
+        </section>
+
+        <hr class="Separar">
+
+        <section class="container-1 flex text-center" id="Planes">
+            <div class="columna">
+                <h2 class="Titulo-Plan">PC</h2>
+                <p class="precio">$19.900/mes</p>
+                <p class="Mini-Informacion-Plan">Plan Básico para gamers casuales.</p>
+                <hr class="Separar-1">
+                <li class="Ptos-Relevantes-1">Cientos de juegos de alta calidad en PC.</li>
+                <li class="Ptos-Relevantes-1">Nuevos juegos desde el mismo día de su lanzamiento.</li>
+                <li class="Ptos-Relevantes-1">Ofertas y descuentos para miembros.</li>
+                <hr class="Separar-1">
+                <a href="#" class="btn-precio">Comprar</a>
+            </div>
+
+            <div class="columna">
+                <h2 class="Titulo-Plan">Consola</h2>
+                <p class="precio">$21.900/mes</p>
+                <p class="Mini-Informacion-Plan">Plan Básico para gamers casuales.</p>
+                <hr class="Separar-1">
+                <li class="Ptos-Relevantes-1">Juegos multijugador online para consola.</li>
+                <li class="Ptos-Relevantes-1">Un catálogo de más de 25 juegos de alta calidad para consola.</li>
+                <li class="Ptos-Relevantes-1">Ofertas y descuentos para miembros.</li>
+                <hr class="Separar-1">
+                <a href="#" class="btn-precio">Comprar</a>
+            </div>
+    
+            <div class="columna">
+                <h2 class="Titulo-Plan">ULTIMATE</h2>
+                <p class="precio">$33.900/mes</p>
+                <p class="Mini-Informacion-Plan">Plan Extra para gamers Mid-core.</p>
+                <hr class="Separar-1">
+                <li class="Ptos-Relevantes-1">Disfruta de cientos de juegos de alta calidad en consola y PC.</li>
+                <li class="Ptos-Relevantes-1">Nuevos juegos desde el mismo día de su lanzamiento.</li>
+                <li class="Ptos-Relevantes-1">Ofertas, descuentos y Recompensas para miembros.</li>
+                <li class="Ptos-Relevantes-1">Juegos multijugador online para consola.</li>
+                <hr class="Separar-1">
+                <a href="#" class="btn-precio">Comprar</a>
+            </div>
+    
+            <div class="columna">
+                <h2 class="Titulo-Plan">DELUXE</h2>
+                <p class="precio">$40.000/mes</p>
+                <p class="Mini-Informacion-Plan">Plan Premium para gamers Hardcore.</p>
+                <hr class="Separar-1">
+                <li class="Ptos-Relevantes-1">Juegos mensuales.</li>
+                <li class="Ptos-Relevantes-1">Multijugador online.</li>
+                <li class="Ptos-Relevantes-1">Descuentos exclusivos.</li>
+                <li class="Ptos-Relevantes-1">Contenido exclusivo</li>
+                <li class="Ptos-Relevantes-1">Almacenamiento en la nube</li>
+                <li class="Ptos-Relevantes-1">Catálogo de juegos</li>
+                <li class="Ptos-Relevantes-1">Catálogo de clásicos</li>
+                <hr class="Separar-1">
+                <a href="#" class="btn-precio">Comprar</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Videojuegos. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
